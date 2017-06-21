@@ -2,6 +2,7 @@
   "name": "monkey-game",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://the-allrounders.github.io/monkey-game",
   "dependencies": {
     "ion-sound": "^3.0.7",
     "mobx": "^3.1.16",
