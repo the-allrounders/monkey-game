@@ -46,7 +46,7 @@ class App extends Component {
                             </div>
                         </div>
                         <CSSTransitionGroup transitionName="questionPreview" transitionEnterTimeout={250} transitionLeaveTimeout={250}>
-                            <img key={store.question} src={FRUIT[store.question]} className="questionPreview"/>
+                            <img key={store.question} src={FRUIT[store.question]} alt="" className="questionPreview"/>
                         </CSSTransitionGroup>
                         <p>Kan jij de {store.question} vinden?</p>
                         <CSSTransitionGroup transitionName="grid" transitionEnterTimeout={250} transitionLeaveTimeout={1100}>
@@ -58,6 +58,7 @@ class App extends Component {
                                         style={{
                                             transitionDelay: `${i / 2 * 10}0ms`
                                         }}
+                                        alt=""
                                     />
                                 )}
                             </div>
