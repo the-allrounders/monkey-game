@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- node
+
+script:
+- yarn build
+
+cache: yarn
+
+deploy:
+  skip_cleanup: true
+  provider: pages
+  local-dir: build
+  github-token:
+    secure: "Yek54z6YPWdFZUNJIMyq76TRPHE2gpsSLoMVJ4h9ac7hQK5WJISspGYF0pDuf8WJbdBKo4pG17nPn+K/3uCRxTNVMHQ3M5HBFGIbVMmqkgEk5Ayvw2QXTYA3vafho9FbMIRhWic+RSH6oEldYmOlTB5vcnPfVATQRF5C9lzWxlOdEZaV+0FQBMIGgqdBwrEhO4QRzR/6MMq/GWm1jQ4KCKOxx1HukdBWM8BZXiHqeNFkYd4TBLmgLmCQQPCuYhq7TvOP4U1Vuvm+S388Z1BNEj1heSEUjcNzhWAe0jPlX0yTq3CUPDRFU3PnaZvoY7ZXdRP6lijqaVoU2wzl6bsv9kYmY99pl9YlICfiXLslM+XRTG5BUpXbSGuJxxGy96De3shdOQr6J9CVHwcf6w4fa7Lg4TbW71CWybtK/lcbAf/Fbm+sNURDsJLZDEhLvyU66xaJdwXLWFcethmpZPdcPx/9wznQhBVcyby0kGYMKzdTtsQmALJ8cds9Pubtsq4dUxCzh3YJjrK8xpq0FmY+92BJJ+9x+JwdUz/z9lIs0FK/qTUccjnm4N87etkjporetcrklPLjcuoT8S0kYypE6gbWSBWnXZulbh5R6F0+FQDiYZzFK/R0gHl2Nc1H2NrA819z4faoCK0QvkCtf/uD/eVNZ5ilVU8HbsZzPXZFuOA="
