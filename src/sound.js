@@ -8,7 +8,7 @@ const ion = window.ion;
 ion.sound({
     sounds: ['correct', 'wrong', 'wacht', 'gelijk', 'gewonnen', 'verloren', ...fruits].map(name => ({name})),
     volume: 1,
-    path: '/sounds/',
+    path: './sounds/',
     preload: true
 });
 
